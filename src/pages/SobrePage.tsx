@@ -18,7 +18,12 @@ const SobrePage = () => {
           
           <div className="bg-[#ECF0F1] p-6 rounded-lg mb-8">
             <h2 className="text-2xl font-semibold text-[#2C3E50] mb-4">Nossa Solução</h2>
-            <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: sobreData.solucao.replace(/•/g, '<br/>•') }} />
+            {/* Corrigido para não usar dangerouslySetInnerHTML */}
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              {sobreData.solucao.split('•').filter(item => item.trim() !== '').map((item, index) => (
+                <li key={index}>{item.trim()}</li>
+              ))}
+            </ul>
           </div>
           
           <h2 className="text-2xl font-semibold text-[#2C3E50] mb-6">Metodologia</h2>
