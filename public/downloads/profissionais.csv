@@ -1,0 +1,8 @@
+ID,Nome,Tipo,Max_Horas_Semana,Min_Horas_Semana,Qualificado_Urgencia,Qualificado_Rotina,Qualificado_Triagem
+P001,Ana Silva,Psicologo,30,15,1,1,1
+P002,Bruno Costa,Psicologo,30,15,1,1,1
+P003,Carla Dias,Estagiario,20,10,0,1,1
+P004,Daniel Souza,Assistente Social,35,10,0,0,1
+P005,Elisa Rocha,Psicologo,25,12,1,1,1
+P006,Fabio Lima,Estagiario,20,10,0,1,1
+P007,Sofia Mendes,Psicologo,30,15,1,1,1
